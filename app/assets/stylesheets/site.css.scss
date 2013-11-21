@@ -1,3 +1,48 @@
 // Place all the styles related to the Site controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+font-family: sans-serif;
+background: grey;
+margin: 0;
+text-align: left;
+}
+#whole_page {
+width:auto;
+margin: 12pt;
+padding: 0;
+text-align: left;
+border-color: black;
+border-style: solid;
+}
+
+#nav {
+color: black;
+background: grey;
+font-size: 12pt;
+padding: 0.5em;
+text-align: center;
+}
+#header {
+font-family: sans-serif;
+background: gray;
+margin: 0;
+text-align: left;
+}
+#nav a, #nav a:visited {
+color:maroon;
+text-decoration:none;
+}
+#nav a:hover {
+border-bottom:2px red;
+}
+#content {
+height: 100%;
+background: grey;
+margin: 0;
+padding: 2em;
+}
+
+#content h1 {
+font-size: 18 pt;
+}

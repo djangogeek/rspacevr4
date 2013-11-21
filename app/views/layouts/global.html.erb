@@ -7,12 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1><%=@title %></h1>
-<nav>
-<%= link_to("Home",		{ :action => "index"}) %> | <%=link_to("About us", { :action => "about"}) %> | <%=link_to("Help", { :action => "help"}) %>  | <%=link_to("Contact", { :action => "contact"}) %> 
- </nav>
+	
+
+<div id="whole_page">
+	<div id="nav">
+	<%= link_to_unless_current "Home", :action => "index" %>
+ 	| <%=link_to_unless_current "About us", :action => "about" %> 
+ 	| <%=link_to_unless_current "Help", :action => "help" %>
+ 	| <%=link_to_unless_current "Contact", :action => "contact" %>
+ 	| <%= link_to(image_tag("logo", :size => "30x45", :border => 0), "http://www.opsomai.com/images/stories/opsis/miniopso.jpg") %>
+ 	</div>
+</div>
+<div id="content">
  <%= @content_for_layout %>
 <%= yield %>
-
+</div>
 </body>
 </html>

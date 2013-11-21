@@ -1,7 +1,7 @@
 class SiteController < ApplicationController
 	layout "global"
   def index
-  	@title = "Welcome to Rails space vRails4 !"
+  	@title = "Welcome to Rails space version Rails4 !"
   end
 
   def about
@@ -9,7 +9,7 @@ class SiteController < ApplicationController
   end
 
   def help
-  	@title = "Need hepl?"
+  	@title = "Need any help ?"
   end
 
   def contact

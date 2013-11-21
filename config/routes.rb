@@ -1,4 +1,6 @@
 RspaceVr4::Application.routes.draw do
+  resources :users
+
   get "site/index"
   get "site/about"
   get "site/help"
