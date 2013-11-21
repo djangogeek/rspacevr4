@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1><%=@title %></h1>
+<nav>
+<%= link_to("Home",		{ :action => "index"}) %> | <%=link_to("About us", { :action => "about"}) %> | <%=link_to("Help", { :action => "help"}) %>  | <%=link_to("Contact", { :action => "contact"}) %> 
+ </nav>
+ <%= @content_for_layout %>
+<%= yield %>
+
+</body>
+</html>
